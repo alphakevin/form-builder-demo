@@ -3,10 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createTheme, ThemeProvider } from '@material-ui/core';
+import { green } from '@material-ui/core/colors';
+
+const theme = createTheme({
+  palette: {
+    // primary: green
+  },
+  overrides: {
+    MuiButton: {
+      root: {
+        borderRadius: 2,
+      }
+    }
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
