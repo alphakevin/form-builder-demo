@@ -1,8 +1,5 @@
-import React, { FC } from 'react';
-import { withTheme } from '@rjsf/core';
-import { Theme as MaterialUITheme } from '@rjsf/material-ui';
-
-const Form = withTheme(MaterialUITheme);
+import React from 'react';
+import { Form } from './Form';
 
 interface FormViewerProps {
   schema: any;

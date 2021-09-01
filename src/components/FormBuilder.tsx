@@ -1,9 +1,6 @@
-import React, { FC } from 'react';
-import { withTheme } from '@rjsf/core';
-import { Theme as MaterialUITheme } from '@rjsf/material-ui';
+import React from 'react';
 import { FormBuilderSchema, formBuilderSchema } from '../schemas/form-builder';
-
-const Form = withTheme(MaterialUITheme);
+import { Form } from './Form';
 
 interface FormBuilderProps {
   value: FormBuilderSchema;
